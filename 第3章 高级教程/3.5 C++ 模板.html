@@ -1,0 +1,1421 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.5 C++ 模板 · 博军一笑的个人主页</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.6 C++ 预处理器.html" />
+    
+    
+    <link rel="prev" href="3.4 C++ 命名空间.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../第1章 C++ 教程/1.0 C++ 教程.html">
+            
+                <a href="../第1章 C++ 教程/1.0 C++ 教程.html">
+            
+                    
+                    第1章 C++ 教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../第1章 C++ 教程/1.1 C++ 简介.html">
+            
+                <a href="../第1章 C++ 教程/1.1 C++ 简介.html">
+            
+                    
+                    1.1 C++ 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../第1章 C++ 教程/1.2 C++ 环境设置.html">
+            
+                <a href="../第1章 C++ 教程/1.2 C++ 环境设置.html">
+            
+                    
+                    1.2 C++ 环境设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../第1章 C++ 教程/1.3 C++ 基本语法.html">
+            
+                <a href="../第1章 C++ 教程/1.3 C++ 基本语法.html">
+            
+                    
+                    1.3 C++ 基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../第1章 C++ 教程/1.4 C++ 注释.html">
+            
+                <a href="../第1章 C++ 教程/1.4 C++ 注释.html">
+            
+                    
+                    1.4 C++ 注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../第1章 C++ 教程/1.5 C++ 数据类型.html">
+            
+                <a href="../第1章 C++ 教程/1.5 C++ 数据类型.html">
+            
+                    
+                    1.5 C++ 数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../第1章 C++ 教程/1.5 C++ 数据类型/czhi-enum-mei-ju-liang-sheng-ming-3001-ding-yi-3001-shi-yong-yu-mei-ju-lei-xiang-jie.html">
+            
+                <a href="../第1章 C++ 教程/1.5 C++ 数据类型/czhi-enum-mei-ju-liang-sheng-ming-3001-ding-yi-3001-shi-yong-yu-mei-ju-lei-xiang-jie.html">
+            
+                    
+                    1.5_1 C++之enum枚举量声明、定义、使用与枚举类详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../第1章 C++ 教程/1.6 C++ 变量类型.html">
+            
+                <a href="../第1章 C++ 教程/1.6 C++ 变量类型.html">
+            
+                    
+                    1.6 C++ 变量类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../第1章 C++ 教程/1.7 C++ 变量作用域.html">
+            
+                <a href="../第1章 C++ 教程/1.7 C++ 变量作用域.html">
+            
+                    
+                    1.7 C++ 变量作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../第1章 C++ 教程/1.8 C++ 常量.html">
+            
+                <a href="../第1章 C++ 教程/1.8 C++ 常量.html">
+            
+                    
+                    1.8 C++ 常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../第1章 C++ 教程/1.9 C++ 修饰符类型.html">
+            
+                <a href="../第1章 C++ 教程/1.9 C++ 修饰符类型.html">
+            
+                    
+                    1.9 C++ 修饰符类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../第1章 C++ 教程/1.10 C++ 存储类.html">
+            
+                <a href="../第1章 C++ 教程/1.10 C++ 存储类.html">
+            
+                    
+                    1.10 C++ 存储类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../第1章 C++ 教程/1.11 C++ 运算符.html">
+            
+                <a href="../第1章 C++ 教程/1.11 C++ 运算符.html">
+            
+                    
+                    1.11 C++ 运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../第1章 C++ 教程/1.12 C++ 循环.html">
+            
+                <a href="../第1章 C++ 教程/1.12 C++ 循环.html">
+            
+                    
+                    1.12 C++ 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../第1章 C++ 教程/1.13 C++ 判断.html">
+            
+                <a href="../第1章 C++ 教程/1.13 C++ 判断.html">
+            
+                    
+                    1.13 C++ 判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../第1章 C++ 教程/1.14 C++ 函数.html">
+            
+                <a href="../第1章 C++ 教程/1.14 C++ 函数.html">
+            
+                    
+                    1.14 C++ 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../第1章 C++ 教程/1.15 C++ 数字.html">
+            
+                <a href="../第1章 C++ 教程/1.15 C++ 数字.html">
+            
+                    
+                    1.15 C++ 数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../第1章 C++ 教程/1.16 C++ 数组.html">
+            
+                <a href="../第1章 C++ 教程/1.16 C++ 数组.html">
+            
+                    
+                    1.16 C++ 数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.16.1" data-path="../第1章 C++ 教程/1.16 C++ 数组/1161-c-++-duo-wei-shu-zu.html">
+            
+                <a href="../第1章 C++ 教程/1.16 C++ 数组/1161-c-++-duo-wei-shu-zu.html">
+            
+                    
+                    1.16_1 C++ 多维数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.2" data-path="../第1章 C++ 教程/1.16 C++ 数组/1162-c-++-zhi-xiang-shu-zu-de-zhi-zhen.html">
+            
+                <a href="../第1章 C++ 教程/1.16 C++ 数组/1162-c-++-zhi-xiang-shu-zu-de-zhi-zhen.html">
+            
+                    
+                    1.16_2 C++ 指向数组的指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.3" data-path="../第1章 C++ 教程/1.16 C++ 数组/1163-c-++-chuan-di-shu-zu-gei-han-shu.html">
+            
+                <a href="../第1章 C++ 教程/1.16 C++ 数组/1163-c-++-chuan-di-shu-zu-gei-han-shu.html">
+            
+                    
+                    1.16_3 C++ 传递数组给函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16.4" data-path="../第1章 C++ 教程/1.16 C++ 数组/1164-c-++-cong-han-shu-fan-hui-shu-zu.html">
+            
+                <a href="../第1章 C++ 教程/1.16 C++ 数组/1164-c-++-cong-han-shu-fan-hui-shu-zu.html">
+            
+                    
+                    1.16_4 C++ 从函数返回数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../第1章 C++ 教程/1.17 C++ 字符串.html">
+            
+                <a href="../第1章 C++ 教程/1.17 C++ 字符串.html">
+            
+                    
+                    1.17 C++ 字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../第1章 C++ 教程/1.18 C++ 指针.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针.html">
+            
+                    
+                    1.18 C++ 指针
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.18.1" data-path="../第1章 C++ 教程/1.18 C++ 指针/1181-c-++-nullzhi-zhen.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1181-c-++-nullzhi-zhen.html">
+            
+                    
+                    1.18_1 C++ Null指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.2" data-path="../第1章 C++ 教程/1.18 C++ 指针/1182-c-++-zhi-zhen-de-suan-zhu-yun-suan.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1182-c-++-zhi-zhen-de-suan-zhu-yun-suan.html">
+            
+                    
+                    1.18_2 C++ 指针的算术运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.3" data-path="../第1章 C++ 教程/1.18 C++ 指针/1183-c-++-zhi-zhen-vs-shu-zu.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1183-c-++-zhi-zhen-vs-shu-zu.html">
+            
+                    
+                    1.18_3 C++ 指针 vs 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.4" data-path="../第1章 C++ 教程/1.18 C++ 指针/1184-c-++-zhi-zhen-shu-zu.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1184-c-++-zhi-zhen-shu-zu.html">
+            
+                    
+                    1.18_4 C++ 指针数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.5" data-path="../第1章 C++ 教程/1.18 C++ 指针/1185-c-++-zhi-xiang-zhi-zhen-de-zhi-zhen.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1185-c-++-zhi-xiang-zhi-zhen-de-zhi-zhen.html">
+            
+                    
+                    1.18_5 C++ 指向指针的指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.6" data-path="../第1章 C++ 教程/1.18 C++ 指针/1186-c-++-chuan-di-zhi-zhen-gei-han-shu.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1186-c-++-chuan-di-zhi-zhen-gei-han-shu.html">
+            
+                    
+                    1.18_6 C++ 传递指针给函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18.7" data-path="../第1章 C++ 教程/1.18 C++ 指针/1187-c-++-cong-han-shu-fan-hui-zhi-zhen.html">
+            
+                <a href="../第1章 C++ 教程/1.18 C++ 指针/1187-c-++-cong-han-shu-fan-hui-zhi-zhen.html">
+            
+                    
+                    1.18_7 C++ 从函数返回指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../第1章 C++ 教程/119-c++-yin-yong.html">
+            
+                <a href="../第1章 C++ 教程/119-c++-yin-yong.html">
+            
+                    
+                    1.19 C++ 引用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.19.1" data-path="../第1章 C++ 教程/119-c++-yin-yong/1191-ba-yin-yong-zuo-wei-can-shu.html">
+            
+                <a href="../第1章 C++ 教程/119-c++-yin-yong/1191-ba-yin-yong-zuo-wei-can-shu.html">
+            
+                    
+                    1.19_1 把引用作为参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19.2" data-path="../第1章 C++ 教程/119-c++-yin-yong/1192-ba-yin-yong-zuo-wei-fan-hui-zhi.html">
+            
+                <a href="../第1章 C++ 教程/119-c++-yin-yong/1192-ba-yin-yong-zuo-wei-fan-hui-zhi.html">
+            
+                    
+                    1.19_2 把引用作为返回值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../第1章 C++ 教程/1.20 C++ 日期时间.html">
+            
+                <a href="../第1章 C++ 教程/1.20 C++ 日期时间.html">
+            
+                    
+                    1.20 C++ 日期 & 时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../第1章 C++ 教程/1.21 C++ 基本的输入输出.html">
+            
+                <a href="../第1章 C++ 教程/1.21 C++ 基本的输入输出.html">
+            
+                    
+                    1.21 C++ 基本的输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../第1章 C++ 教程/1.22 C++ 数据结构.html">
+            
+                <a href="../第1章 C++ 教程/1.22 C++ 数据结构.html">
+            
+                    
+                    1.22 C++ 数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../第2章 C++ 面向对象/2.0 C++ 面向对象.html">
+            
+                <a href="../第2章 C++ 面向对象/2.0 C++ 面向对象.html">
+            
+                    
+                    第2章 C++ 面向对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象.html">
+            
+                    
+                    2.1 C++ 类 & 对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/211-c-++-lei-cheng-yuan-han-shu.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/211-c-++-lei-cheng-yuan-han-shu.html">
+            
+                    
+                    2.1_1 C++ 类成员函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/212-c-++-lei-fang-wen-xiu-shi-fu.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/212-c-++-lei-fang-wen-xiu-shi-fu.html">
+            
+                    
+                    2.1_2 C++ 类访问修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/213-c-++-gou-zao-han-shu-and-xi-gou-han-shu.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/213-c-++-gou-zao-han-shu-and-xi-gou-han-shu.html">
+            
+                    
+                    2.1_3 C++ 构造函数 & 析构函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/214-c-++-kao-bei-gou-zao-han-shu.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/214-c-++-kao-bei-gou-zao-han-shu.html">
+            
+                    
+                    2.1_4 C++ 拷贝构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/215-c-++-you-yuan-han-shu.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/215-c-++-you-yuan-han-shu.html">
+            
+                    
+                    2.1_5 C++ 友元函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/216-c-++-nei-lian-han-shu.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/216-c-++-nei-lian-han-shu.html">
+            
+                    
+                    2.1_6 C++ 内联函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/217-c-++-zhong-de-this-zhi-zhen.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/217-c-++-zhong-de-this-zhi-zhen.html">
+            
+                    
+                    2.1_7 C++ 中的this指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/218-c-++-zhong-zhi-xiang-lei-de-zhi-zhen.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/218-c-++-zhong-zhi-xiang-lei-de-zhi-zhen.html">
+            
+                    
+                    2.1_8 C++ 中指向类的指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/219-c-++-lei-de-jing-tai-cheng-yuan.html">
+            
+                <a href="../第2章 C++ 面向对象/2.1 C++ 类 & 对象/219-c-++-lei-de-jing-tai-cheng-yuan.html">
+            
+                    
+                    2.1_9 C++ 类的静态成员
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../第2章 C++ 面向对象/2.2 C++ 继承.html">
+            
+                <a href="../第2章 C++ 面向对象/2.2 C++ 继承.html">
+            
+                    
+                    2.2 C++ 继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数.html">
+            
+                    
+                    2.3 C++ 重载运算符和重载函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/231-c-++-yi-yuan-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/231-c-++-yi-yuan-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_1 C++ 一元运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/232-c-++-er-yuan-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/232-c-++-er-yuan-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_2 C++ 二元运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/233-c-++-guan-xi-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/233-c-++-guan-xi-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_3 C++ 关系运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/234-c-++-shu-5165-shu-chu-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/234-c-++-shu-5165-shu-chu-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_4 C++ 输入/输出运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/235-c-++-++-he-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/235-c-++-++-he-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_5 C++ ++ 和 -- 运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/236-c-++-fu-zhi-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/236-c-++-fu-zhi-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_6 C++ 赋值运算符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/237-c-++-han-shu-diao-yong-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/237-c-++-han-shu-diao-yong-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_7 C++ 函数调用运算符 () 重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/238-c-++xia-biao-yun-suan-7b265b5d-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/238-c-++xia-biao-yun-suan-7b265b5d-zhong-zai.html">
+            
+                    
+                    2.3_8 C ++ 下标运算符[]重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/239-c-++-lei-cheng-yuan-fang-wen-yun-suan-fu-zhong-zai.html">
+            
+                <a href="../第2章 C++ 面向对象/2.3 C++ 重载运算符和重载函数/239-c-++-lei-cheng-yuan-fang-wen-yun-suan-fu-zhong-zai.html">
+            
+                    
+                    2.3_9 C++ 类成员访问运算符 -> 重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../第2章 C++ 面向对象/2.4 C++ 多态.html">
+            
+                <a href="../第2章 C++ 面向对象/2.4 C++ 多态.html">
+            
+                    
+                    2.4 C++ 多态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../第2章 C++ 面向对象/2.5 C++ 数据抽象.html">
+            
+                <a href="../第2章 C++ 面向对象/2.5 C++ 数据抽象.html">
+            
+                    
+                    2.5 C++ 数据抽象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../第2章 C++ 面向对象/2.6 C++ 接口抽象类.html">
+            
+                <a href="../第2章 C++ 面向对象/2.6 C++ 接口抽象类.html">
+            
+                    
+                    2.6 C++ 接口（抽象类）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第3章 高级教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1 C++ 文件和流.html">
+            
+                <a href="3.1 C++ 文件和流.html">
+            
+                    
+                    3.1 C++ 文件和流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2 C++ 异常处理.html">
+            
+                <a href="3.2 C++ 异常处理.html">
+            
+                    
+                    3.2 C++ 异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3 C++ 动态内存.html">
+            
+                <a href="3.3 C++ 动态内存.html">
+            
+                    
+                    3.3 C++ 动态内存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3.4 C++ 命名空间.html">
+            
+                <a href="3.4 C++ 命名空间.html">
+            
+                    
+                    3.4 C++ 命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="3.5 C++ 模板.html">
+            
+                <a href="3.5 C++ 模板.html">
+            
+                    
+                    3.5 C++ 模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3.6 C++ 预处理器.html">
+            
+                <a href="3.6 C++ 预处理器.html">
+            
+                    
+                    3.6 C++ 预处理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3.7 C++ 信号处理.html">
+            
+                <a href="3.7 C++ 信号处理.html">
+            
+                    
+                    3.7 C++ 信号处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3.8 C++ 多线程.html">
+            
+                <a href="3.8 C++ 多线程.html">
+            
+                    
+                    3.8 C++ 多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="3.9 C++ Web编程.html">
+            
+                <a href="3.9 C++ Web编程.html">
+            
+                    
+                    3.9 C++ Web 编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../第4章 C++ 资源库/">
+            
+                <a href="../第4章 C++ 资源库/">
+            
+                    
+                    第4章 C++ 资源库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../第4章 C++ 资源库/4.1 C++ STL 教程.html">
+            
+                <a href="../第4章 C++ 资源库/4.1 C++ STL 教程.html">
+            
+                    
+                    4.1 C++ STL 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../第4章 C++ 资源库/4.2 C++ 标准库.html">
+            
+                <a href="../第4章 C++ 资源库/4.2 C++ 标准库.html">
+            
+                    
+                    4.2 C++ 标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../第4章 C++ 资源库/4.3 C++ 有用的资源.html">
+            
+                <a href="../第4章 C++ 资源库/4.3 C++ 有用的资源.html">
+            
+                    
+                    4.3 C++ 有用的资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.5 C++ 模板</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="c-&#x6A21;&#x677F;">C++ &#x6A21;&#x677F;</h2>
+<p>&#x6A21;&#x677F;&#x662F;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;&#x5373;&#x4EE5;&#x4E00;&#x79CD;&#x72EC;&#x7ACB;&#x4E8E;&#x4EFB;&#x4F55;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x5F0F;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x6A21;&#x677F;&#x662F;&#x521B;&#x5EFA;&#x6CDB;&#x578B;&#x7C7B;&#x6216;&#x51FD;&#x6570;&#x7684;&#x84DD;&#x56FE;&#x6216;&#x516C;&#x5F0F;&#x3002;&#x5E93;&#x5BB9;&#x5668;&#xFF0C;&#x6BD4;&#x5982;&#x8FED;&#x4EE3;&#x5668;&#x548C;&#x7B97;&#x6CD5;&#xFF0C;&#x90FD;&#x662F;&#x6CDB;&#x578B;&#x7F16;&#x7A0B;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x4F7F;&#x7528;&#x4E86;&#x6A21;&#x677F;&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x5BB9;&#x5668;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x6BD4;&#x5982; <strong>&#x5411;&#x91CF;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8BB8;&#x591A;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5411;&#x91CF;&#xFF0C;&#x6BD4;&#x5982; <code>vector &lt;int&gt;</code> &#x6216; <code>vector &lt;string&gt;</code>&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x6765;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x548C;&#x7C7B;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x8BA9;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x6765;&#x770B;&#x770B;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x2003;</p>
+<h4 id="&#x51FD;&#x6570;&#x6A21;&#x677F;">&#x51FD;&#x6570;&#x6A21;&#x677F;</h4>
+<p>&#x6A21;&#x677F;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x822C;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    template &lt;class type&gt; ret-type func-name(parameter list)
+    {
+       // &#x51FD;&#x6570;&#x7684;&#x4E3B;&#x4F53;
+    }
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;<code>type</code> &#x662F;&#x51FD;&#x6570;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5360;&#x4F4D;&#x7B26;&#x540D;&#x79F0;&#x3002;&#x8FD9;&#x4E2A;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x5728;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD4;&#x56DE;&#x4E24;&#x4E2A;&#x6570;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    #include &lt;iostream&gt;
+    #include &lt;string&gt;
+
+    using namespace std;
+
+    // typename&#x6539;&#x4E3A;class&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;
+    template &lt;typename T&gt;
+    inline T const&amp; Max (T const&amp; a, T const&amp; b) 
+    { 
+        return a &lt; b ? b:a; 
+    } 
+    int main ()
+    {
+
+        int i = 39;
+        int j = 20;
+        cout &lt;&lt; &quot;Max(i, j): &quot; &lt;&lt; Max(i, j) &lt;&lt; endl; 
+
+        double f1 = 13.5; 
+        double f2 = 20.7; 
+        cout &lt;&lt; &quot;Max(f1, f2): &quot; &lt;&lt; Max(f1, f2) &lt;&lt; endl; 
+
+        string s1 = &quot;Hello&quot;; 
+        string s2 = &quot;World&quot;; 
+        cout &lt;&lt; &quot;Max(s1, s2): &quot; &lt;&lt; Max(s1, s2) &lt;&lt; endl; 
+
+       return 0;
+    }
+</code></pre>
+<p>&#x5F53;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x88AB;&#x7F16;&#x8BD1;&#x548C;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x4EA7;&#x751F;&#x4E0B;&#x5217;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    Max(i, j): 39
+    Max(f1, f2): 20.7
+    Max(s1, s2): World
+</code></pre>
+<p>&#x51FD;&#x6570;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x91CD;&#x8F7D;&#xFF0C;&#x53EA;&#x8981;&#x5B83;&#x4EEC;&#x7684;&#x5F62;&#x53C2;&#x8868;&#x4E0D;&#x540C;&#x5373;&#x53EF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5B58;&#x5728;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    template&lt;class T1, class T2&gt;
+    void print(T1 arg1, T2 arg2)
+    {
+      cout&lt;&lt;arg1&lt;&lt;&quot; &quot;&lt;&lt;arg2&lt;&lt;endl; 
+    }
+    template&lt;class T&gt;
+    void print(T arg1, T arg2)
+    {
+      cout&lt;&lt; arg1&lt;&lt; &quot; &quot;&lt;&lt; arg2&lt;&lt; endl;
+    }
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="&#x7C7B;&#x6A21;&#x677F;">&#x7C7B;&#x6A21;&#x677F;</h4>
+<p>&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x6A21;&#x677F;&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x7C7B;&#x6A21;&#x677F;&#x3002;&#x6CDB;&#x578B;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x4E00;&#x822C;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    template &lt;class type&gt; class class-name {
+    .
+    .
+    .
+    }
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;<code>type</code> &#x662F;&#x5360;&#x4F4D;&#x7B26;&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7C7B;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x65F6;&#x5019;&#x8FDB;&#x884C;&#x6307;&#x5B9A;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7684;&#x5217;&#x8868;&#x6765;&#x5B9A;&#x4E49;&#x591A;&#x4E2A;&#x6CDB;&#x578B;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#x5B9A;&#x4E49;&#x4E86;&#x7C7B; <code>Stack&lt;&gt;</code>&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;&#x4E86;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#x6765;&#x5BF9;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5165;&#x6808;&#x51FA;&#x6808;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    #include &lt;iostream&gt;
+    #include &lt;vector&gt;
+    #include &lt;cstdlib&gt;
+    #include &lt;string&gt;
+    #include &lt;stdexcept&gt;
+
+    using namespace std;
+
+    template &lt;class T&gt;
+    class Stack { 
+      private: 
+        vector&lt;T&gt; elems;     // &#x5143;&#x7D20; 
+
+      public: 
+        void push(T const&amp;);  // &#x5165;&#x6808;
+        void pop();               // &#x51FA;&#x6808;
+        T top() const;            // &#x8FD4;&#x56DE;&#x6808;&#x9876;&#x5143;&#x7D20;
+        bool empty() const{       // &#x5982;&#x679C;&#x4E3A;&#x7A7A;&#x5219;&#x8FD4;&#x56DE;&#x771F;&#x3002;
+            return elems.empty(); 
+        } 
+    }; 
+
+    template &lt;class T&gt;
+    void Stack&lt;T&gt;::push (T const&amp; elem) 
+    { 
+        // &#x8FFD;&#x52A0;&#x4F20;&#x5165;&#x5143;&#x7D20;&#x7684;&#x526F;&#x672C;
+        elems.push_back(elem);    
+    } 
+
+    template &lt;class T&gt;
+    void Stack&lt;T&gt;::pop () 
+    { 
+        if (elems.empty()) { 
+            throw out_of_range(&quot;Stack&lt;&gt;::pop(): empty stack&quot;); 
+        }
+        // &#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+        elems.pop_back();         
+    } 
+
+    template &lt;class T&gt;
+    T Stack&lt;T&gt;::top () const 
+    { 
+        if (elems.empty()) { 
+            throw out_of_range(&quot;Stack&lt;&gt;::top(): empty stack&quot;); 
+        }
+        // &#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x526F;&#x672C; 
+        return elems.back();      
+    } 
+
+    int main() 
+    { 
+        try { 
+            Stack&lt;int&gt;         intStack;  // int &#x7C7B;&#x578B;&#x7684;&#x6808; 
+            Stack&lt;string&gt; stringStack;    // string &#x7C7B;&#x578B;&#x7684;&#x6808; 
+
+            // &#x64CD;&#x4F5C; int &#x7C7B;&#x578B;&#x7684;&#x6808; 
+            intStack.push(7); 
+            cout &lt;&lt; intStack.top() &lt;&lt;endl; 
+
+            // &#x64CD;&#x4F5C; string &#x7C7B;&#x578B;&#x7684;&#x6808; 
+            stringStack.push(&quot;hello&quot;); 
+            cout &lt;&lt; stringStack.top() &lt;&lt; std::endl; 
+            stringStack.pop(); 
+            stringStack.pop(); 
+        } 
+        catch (exception const&amp; ex) { 
+            cerr &lt;&lt; &quot;Exception: &quot; &lt;&lt; ex.what() &lt;&lt;endl; 
+            return -1;
+        } 
+    }
+</code></pre>
+<p>&#x5F53;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x88AB;&#x7F16;&#x8BD1;&#x548C;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x4EA7;&#x751F;&#x4E0B;&#x5217;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    7
+    hello
+    Exception: Stack&lt;&gt;::pop(): empty stack
+</code></pre>
+<p>&#x2003;</p>
+<h4 id="c-&#x4E2D;-typename-&#x548C;-class-&#x7684;&#x533A;&#x522B;">C++ &#x4E2D; typename &#x548C; class &#x7684;&#x533A;&#x522B;</h4>
+<p>&#x5728; C++ Template &#x4E2D;&#x5F88;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x7528;&#x5230;&#x4E86; <code>typename</code> &#x4E0E; <code>class</code> &#x8FD9;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x800C;&#x4E14;&#x597D;&#x50CF;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x5462;?</p>
+<p>&#x76F8;&#x4FE1;&#x5B66;&#x4E60; C++ &#x7684;&#x4EBA;&#x5BF9; <code>class</code> &#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x90FD;&#x975E;&#x5E38;&#x660E;&#x767D;&#xFF0C;<code>class</code> &#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x7C7B;&#xFF0C;&#x5728;&#x6A21;&#x677F;&#x5F15;&#x5165; C++ &#x540E;&#xFF0C;&#x6700;&#x521D;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x7684;&#x65B9;&#x6CD5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    template&lt;class T&gt;......
+</code></pre>
+<p>&#x8FD9;&#x91CC; <code>class</code> &#x5173;&#x952E;&#x5B57;&#x8868;&#x660E;T&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x540E;&#x6765;&#x4E3A;&#x4E86;&#x907F;&#x514D; <code>class</code> &#x5728;&#x8FD9;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#x7684;&#x4F7F;&#x7528;&#x53EF;&#x80FD;&#x7ED9;&#x4EBA;&#x5E26;&#x6765;&#x6DF7;&#x6DC6;&#xFF0C;&#x6240;&#x4EE5;&#x5F15;&#x5165;&#x4E86; <code>typename</code> &#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x540C; <code>class</code> &#x4E00;&#x6837;&#x8868;&#x660E;&#x540E;&#x9762;&#x7684;&#x7B26;&#x53F7;&#x4E3A;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x6837;&#x5728;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    template&lt;typename T&gt;......
+</code></pre>
+<p>&#x5728;&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x8BED;&#x6CD5;&#x4E2D;&#x5173;&#x952E;&#x5B57; <code>class</code> &#x4E0E; <code>typename</code> &#x7684;&#x4F5C;&#x7528;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x3002;</p>
+<p><code>typename</code> &#x96BE;&#x9053;&#x4EC5;&#x4EC5;&#x5728;&#x6A21;&#x677F;&#x5B9A;&#x4E49;&#x4E2D;&#x8D77;&#x4F5C;&#x7528;&#x5417;&#xFF1F;&#x5176;&#x5B9E;&#x4E0D;&#x662F;&#x8FD9;&#x6837;&#xFF0C;<code>typename</code> &#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x4E3A;&#xFF1A;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x4F9D;&#x8D56;&#x7C7B;&#x578B;(<code>nested depended name</code>)&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-cplusplus">    class MyArray 
+    { 
+        public&#xFF1A;
+        typedef int LengthType;
+    .....
+    }
+
+    template&lt;class T&gt;
+    void MyMethod( T myarr ) 
+    { 
+        typedef typename T::LengthType LengthType; 
+        LengthType length = myarr.GetLength; 
+    }
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019; <code>typename</code> &#x7684;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x544A;&#x8BC9; C++ &#x7F16;&#x8BD1;&#x5668;&#xFF0C;<code>typename</code> &#x540E;&#x9762;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6210;&#x5458;&#x51FD;&#x6570;&#x6216;&#x8005;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5982;&#x679C;&#x524D;&#x9762;&#x6CA1;&#x6709; <code>typename</code>&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x529E;&#x6CD5;&#x77E5;&#x9053; <code>T::LengthType</code> &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x540D;&#x79F0;(&#x9759;&#x6001;&#x6570;&#x636E;&#x6210;&#x5458;&#x6216;&#x8005;&#x9759;&#x6001;&#x51FD;&#x6570;)&#xFF0C;&#x6240;&#x4EE5;&#x7F16;&#x8BD1;&#x4E0D;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x3002;</p>
+<p>&#x1F51A;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.4 C++ 命名空间.html" class="navigation navigation-prev " aria-label="Previous page: 3.4 C++ 命名空间">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.6 C++ 预处理器.html" class="navigation navigation-next " aria-label="Next page: 3.6 C++ 预处理器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.5 C++ 模板","level":"1.4.5","depth":2,"next":{"title":"3.6 C++ 预处理器","level":"1.4.6","depth":2,"path":"第3章 高级教程/3.6 C++ 预处理器.md","ref":"第3章 高级教程/3.6 C++ 预处理器.md","articles":[]},"previous":{"title":"3.4 C++ 命名空间","level":"1.4.4","depth":2,"path":"第3章 高级教程/3.4 C++ 命名空间.md","ref":"第3章 高级教程/3.4 C++ 命名空间.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第3章 高级教程/3.5 C++ 模板.md","mtime":"2018-07-26T03:49:07.334Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-09-24T12:59:22.987Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
